@@ -21,7 +21,8 @@ install build prerequisities (tested on Ubuntu 20.04, gcc 9.3.0):
 ### Windows
 Currently SlicerAstro does not compile/work under Windows (because of specific libraries deps, e.g. wcslib).
 
-* More info at: [Slicer Prerequisites]
+### Additional Info 
+[Slicer Prerequisites]
 
 Checkout
 --------
