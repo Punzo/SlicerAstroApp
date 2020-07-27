@@ -3,7 +3,7 @@
 
 Introduction
 ------------
-SlicerAstro is an Astronomi (HI) customization of 3DSlicer.
+SlicerAstro is an Astronomy (HI) customization of 3DSlicer with the SlicerAstro [extension](https://github.com/Punzo/SlicerAstro).
 
 Prerequisites
 -------------
