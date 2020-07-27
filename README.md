@@ -16,7 +16,7 @@ install build prerequisities (tested on Ubuntu 20.04, gcc 9.3.0):
 ### MacOS (not tested)
 1. cmake minimum version has to be 3.17.3. If your system one is older, please download it from https://cmake.org/download/ and check [update-cmake](https://github.com/plampite/ibpark/blob/master/DeveloperGuide.md#update-cmake).
 1. download the qt (version 5.15.0) online [installer](https://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run) and install the following: Desktop gcc 64-bit, Sources, Qt Debug Information Files and Qt Creator (this last it is installed in default).
-1. Install Xcode: ```bat xcode-select --install ```
+1. Install Xcode: ```xcode-select --install ```
 
 ### Windows
 Currently SlicerAstro does not compile/work under Windows (because of specific libraries deps, e.g. wcslib).
