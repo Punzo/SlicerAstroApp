@@ -31,7 +31,7 @@ Checkout
 * Add the SSH key to your Github account: [Steps to add SSH Key to Github].
 * Clone the repository and follow platform specific instructions below:
 
-        $ git clone git@github.com:Punzo/SlicerAstroApp
+        $ git clone https://github.com/Punzo/SlicerAstroApp.git 
 
 Build
 -----
