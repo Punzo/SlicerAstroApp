@@ -51,8 +51,11 @@ mkdir SlicerAstroApp-build
 cd SlicerAstroApp-build
 cmake -DCMAKE_BUILD_TYPE:STRING=Release -DQt5_DIR=path-to-Qt/lib/cmake/Qt5 ../SlicerAstroApp
 ```
-* ___MacOSX:___*  add ```-DCMAKE_OSX_DEPLOYMENT_TARGET=10.xx``` (e.g.: 10.14 for Mojave) to the cmake command
-    
+N.B. * ___MacOSX:___*  
+add ```-DCMAKE_OSX_DEPLOYMENT_TARGET=10.xx``` (e.g.: 10.14 for Mojave) to the cmake command
+after cmake: go to SlicerAstroApp-build/slicersources-build/python-slicerastro-requirements-prefix/src/python-slicerastro-requirements-stamp and
+```cp  python-slicerastro-requirements-install-Release.cmake python-slicerastro-requirements-install```
+
 2. Build
 
 ```bat
