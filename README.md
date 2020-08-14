@@ -53,8 +53,11 @@ cmake -DCMAKE_BUILD_TYPE:STRING=Release -DQt5_DIR=path-to-Qt/lib/cmake/Qt5 ../Sl
 ```
 N.B. * ___MacOSX:___*  
 add ```-DCMAKE_OSX_DEPLOYMENT_TARGET=10.xx``` (e.g.: 10.14 for Mojave) to the cmake command
-after cmake: go to SlicerAstroApp-build/slicersources-build/python-slicerastro-requirements-prefix/src/python-slicerastro-requirements-stamp and
-```cp  python-slicerastro-requirements-install-Release.cmake python-slicerastro-requirements-install```
+after cmake (temporary fix to avoid errors from inability to package astropy): 
+```bat
+cd slicersources-build/python-slicerastro-requirements-prefix/src/python-slicerastro-requirements-stamp 
+cp  python-slicerastro-requirements-install-Release.cmake python-slicerastro-requirements-install
+```
 
 2. Build
 
