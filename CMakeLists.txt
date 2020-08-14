@@ -32,11 +32,11 @@ set(Slicer_MAIN_PROJECT "SlicerAstroApp")
 
 # Set organization
 set(Slicer_ORGANIZATION_DOMAIN "punzodavide@hotmail.it")
-set(Slicer_ORGANIZATION_NAME   "Davide Punzo")
+set(Slicer_ORGANIZATION_NAME   "KapteynAstronomicalInstitute")
 
 # Default home and favorite modules
-set(Slicer_DEFAULT_HOME_MODULE "SlicerAstroWelcome")
-set(Slicer_DEFAULT_FAVORITE_MODULES "SlicerAstroWelcome, AstroSampleData, SlicerAstroDataProbe, AstroVolume, AstroSmoothing, AstroMasking, AstroProfiles, AstroMomentMaps, AstroPVSlice, AstroPVDiagram, AstroModeling, AstroReproject")
+set(Slicer_DEFAULT_HOME_MODULE "AstroWelcome")
+set(Slicer_DEFAULT_FAVORITE_MODULES "AstroWelcome, AstroSampleData, SlicerAstroDataProbe, AstroVolume, AstroSmoothing, AstroMasking, AstroProfiles, AstroMomentMaps, AstroPVSlice, AstroPVDiagram, AstroModeling, AstroReproject")
 
 # Configure SuperBuild
 set(SUPERBUILD_TOPLEVEL_PROJECT Slicer)
@@ -133,6 +133,7 @@ set(Slicer_QTSCRIPTEDMODULES_DISABLED
   Endoscopy
   LabelStatistics
   PerformanceTests
+  SampleData
   SegmentStatistics
   VectorToScalarVolume
   NeurosurgicalPlanningTutorialMarkupsSelfTest
@@ -148,7 +149,7 @@ set(${extension_name}_SOURCE_DIR "${CMAKE_BINARY_DIR}/${extension_name}")
 FetchContent_Populate(${extension_name}
   SOURCE_DIR	 ${${extension_name}_SOURCE_DIR}
   GIT_REPOSITORY ${EP_GIT_PROTOCOL}://github.com/Punzo/${extension_name}
-  GIT_TAG	 dc57afe90140f05f1e21d8ba4c04f458a5c57340
+  GIT_TAG	 1da6c116619f9ea65953e949874c2e83dd176198
   GIT_PROGRESS	 1
   QUIET
   )

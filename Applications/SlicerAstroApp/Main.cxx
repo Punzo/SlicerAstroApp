@@ -63,11 +63,6 @@ int SlicerAppMain(int argc, char* argv[])
     window->setWindowTitle(windowTitle);
 
     // Setup Sample Data module icon
-    qSlicerModuleManager * moduleManager = app.moduleManager();
-    qSlicerAbstractCoreModule * sampleDataCoreModule = moduleManager->module("SampleData");
-    qSlicerAbstractModule* sampleDataModule = qobject_cast<qSlicerAbstractModule*>(sampleDataCoreModule);
-    sampleDataModule->action()->setIcon(window->windowIcon());
-
     if(!app.mrmlScene())
       {
       return 0;
@@ -76,10 +71,9 @@ int SlicerAppMain(int argc, char* argv[])
     // Open Help & acknowledgment
     qSlicerModulePanel* modulePanel = window->findChild<qSlicerModulePanel*>("ModulePanel");
     ctkCollapsibleButton* helpButton = modulePanel->findChild<ctkCollapsibleButton*>("HelpCollapsibleButton");
-    helpButton->setCollapsed(false);
+    helpButton->setCollapsed(true);
 
     qSlicerLayoutManager *layoutManager = qSlicerApplication::application()->layoutManager();
-    vtkMRMLLayoutNode* layoutNode = layoutManager->layoutLogic()->GetLayoutNode();
 
     // Use Custom settings
     bool axisLables3DVisibility = QSettings().value("Default3DView/AxisLabelsVisibility").toBool();

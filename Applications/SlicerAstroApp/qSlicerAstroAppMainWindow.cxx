@@ -121,7 +121,7 @@ void qSlicerAstroAppMainWindowPrivate::setupUi(QMainWindow * mainWindow)
   qSlicerModulesMenu* modulesMenu = this->ModuleSelectorToolBar->modulesMenu();
   modulesMenu->setTopLevelCategoryOrder(
         QStringList()
-        << "SlicerAstro"
+        << "Astronomy"
         << "Informatics"
         << "Registration"
         << "Utilities"
