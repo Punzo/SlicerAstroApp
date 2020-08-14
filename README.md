@@ -56,7 +56,7 @@ add ```-DCMAKE_OSX_DEPLOYMENT_TARGET=10.xx``` (e.g.: 10.14 for Mojave) to the cm
 after cmake (temporary fix to avoid errors from inability to package astropy): 
 ```bat
 cd slicersources-build/python-slicerastro-requirements-prefix/src/python-slicerastro-requirements-stamp 
-cp  python-slicerastro-requirements-install-Release.cmake python-slicerastro-requirements-install
+cp python-slicerastro-requirements-install-Release.cmake python-slicerastro-requirements-install
 ```
 
 2. Build
