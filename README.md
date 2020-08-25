@@ -17,11 +17,9 @@ install build prerequisities (tested on Ubuntu 20.04, gcc 9.3.0):
 1. cmake minimum version has to be 3.17.3. If your system one is older, please download it from https://cmake.org/download/ and check [update-cmake](https://github.com/plampite/ibpark/blob/master/DeveloperGuide.md#update-cmake).
 1. install qt (version 5.15.0) using the special package [qt-easy-build](https://github.com/jcfr/qt-easy-build/tree/5.15.0). 
 1. Install Xcode: ```xcode-select --install ```
-1. then first build Slicer and followed by SlicerAstroApp
-1. finish with making the binary distribution package
 
 ### Windows
-Currently SlicerAstro does not compile/work under Windows (because of specific libraries deps, e.g. wcslib).
+Currently SlicerAstro extension does not compile/work under Windows (because of specific libraries deps, e.g. wcslib).
 
 ### Additional Info 
 [Slicer Prerequisites]
