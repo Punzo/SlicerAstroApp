@@ -31,7 +31,7 @@ set(Slicer_APPLICATIONS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Applications)
 set(Slicer_MAIN_PROJECT "SlicerAstroApp")
 
 # Set organization
-set(Slicer_ORGANIZATION_DOMAIN "punzodavide@hotmail.it")
+set(Slicer_ORGANIZATION_DOMAIN "www.astro.rug.nl")
 set(Slicer_ORGANIZATION_NAME   "KapteynAstronomicalInstitute")
 
 # Default home and favorite modules
