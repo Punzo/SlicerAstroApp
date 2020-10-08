@@ -13,7 +13,7 @@ if(NOT DEFINED slicersources_SOURCE_DIR)
   # Download Slicer sources and set variables slicersources_SOURCE_DIR and slicersources_BINARY_DIR
   FetchContent_Populate(slicersources
     GIT_REPOSITORY git://github.com/Slicer/Slicer
-    GIT_TAG        1ed419ef83bebe918cefbf78039cfc9d84967571
+    GIT_TAG        495a783964e4f5eb7fcf38f890b772f142afab35
     GIT_PROGRESS   1
     )
 else()
@@ -149,7 +149,7 @@ set(${extension_name}_SOURCE_DIR "${CMAKE_BINARY_DIR}/${extension_name}")
 FetchContent_Populate(${extension_name}
   SOURCE_DIR	 ${${extension_name}_SOURCE_DIR}
   GIT_REPOSITORY ${EP_GIT_PROTOCOL}://github.com/Punzo/${extension_name}
-  GIT_TAG	 8a50113e43d1bb18d5ffc3b6b4f0a709fcdc777a
+  GIT_TAG	 7d93ff20c01a39b9ee083493c989eb8c65596594
   GIT_PROGRESS	 1
   QUIET
   )

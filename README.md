@@ -47,7 +47,7 @@ Tested Development environment: ubuntu 20.04, cmake 3.17.3, Qt 5.15.0, c++ 9.3.0
 ```bat
 mkdir SlicerAstroApp-build
 cd SlicerAstroApp-build
-cmake -DCMAKE_BUILD_TYPE:STRING=Release -DQt5_DIR=path-to-Qt/lib/cmake/Qt5 ../SlicerAstroApp
+cmake -DCMAKE_BUILD_TYPE:STRING=Release -DQt5_DIR=path-to-Qt/lib/cmake/Qt5 -DSlicer_VTK_VERSION_MAJOR=9 ../SlicerAstroApp
 ```
 N.B. * ___MacOSX:___*  
 add ```-DCMAKE_OSX_DEPLOYMENT_TARGET=10.xx``` (e.g.: 10.14 for Mojave) to the cmake command
