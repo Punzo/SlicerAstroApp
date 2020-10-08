@@ -40,8 +40,6 @@ Make sure that you can compile Slicer OR have the Prerequisites for Slicer: [Sli
 
 ### Unix-like
 
-Tested Development environment: ubuntu 20.04, cmake 3.17.3, Qt 5.15.0, c++ 9.3.0.
-
 1. Configure CMake
 
 ```bat
