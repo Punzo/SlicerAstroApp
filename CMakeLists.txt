@@ -149,7 +149,7 @@ set(${extension_name}_SOURCE_DIR "${CMAKE_BINARY_DIR}/${extension_name}")
 FetchContent_Populate(${extension_name}
   SOURCE_DIR	 ${${extension_name}_SOURCE_DIR}
   GIT_REPOSITORY ${EP_GIT_PROTOCOL}://github.com/Punzo/${extension_name}
-  GIT_TAG	 73c1e2acb1ed4093b1db8401fc0b5fc3d59ed009
+  GIT_TAG	 d22e22f439d3fdc47a86f09bc1271d034a08324d
   GIT_PROGRESS	 1
   QUIET
   )
