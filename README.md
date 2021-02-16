@@ -45,8 +45,10 @@ Make sure that you can compile Slicer OR have the Prerequisites for Slicer: [Sli
 ```bat
 mkdir SlicerAstroApp-build
 cd SlicerAstroApp-build
-cmake -DCMAKE_BUILD_TYPE:STRING=Release -DQt5_DIR=path-to-Qt/lib/cmake/Qt5 -DSlicer_VTK_VERSION_MAJOR=9 ../SlicerAstroApp
+cmake -DCMAKE_BUILD_TYPE:STRING=Release -DQt5_DIR=path-to-Qt/lib/cmake/Qt5 ../SlicerAstroApp
 ```
+for setting the VTK version add: ```-DSlicer_VTK_VERSION_MAJOR=9``` (Note: at the moment vtk9 is not officially supported by 3DSlicer yet, default is vtk8)
+
 N.B. * ___MacOSX:___*  
 add ```-DCMAKE_OSX_DEPLOYMENT_TARGET=10.xx``` (e.g.: 10.14 for Mojave) to the cmake command
 
